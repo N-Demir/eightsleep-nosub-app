@@ -2,13 +2,6 @@ import { drizzle } from "drizzle-orm/neon-http";
 import { neon } from "@neondatabase/serverless";
 import { env } from "~/env";
 
-
-// Vercel recommended way for using Neon
-// import { config } from "dotenv";
-// config({ path: ".env" }); // or .env.local
-
-
-
 export default {
   schema: "./src/server/db/schema.ts",
   dialect: "postgresql",
